@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = './sellProduct.js'></script>
+    <link rel="stylesheet" href="./sellProduct.css">
+</head>
+<body>
+   <div class="container">
+       <div class="products">
+           <div class="title">Danh muc hàng hóa</div>
+           <table class="productList">
+               <thead>
+                   <tr>
+                       <th>Mã</th>
+                       <th>Tên Sản phẩm</th>
+                       <th>Giá</th>
+                       <th>&nbsp;</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>1</td>
+                       <td>iphone 7</td>
+                       <td>$ <span class="amount">300</span></td>
+                       <td><button id ="1" type="button" onclick="addToCart(this)">Thêm</button></td>
+                   </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>iphone 8</td>
+                        <td>$ <span class="amount">400</span></td>
+                        <td><button id ="2" type="button" onclick="addToCart(this)">Thêm</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>iphone 9</td>
+                        <td>$ <span class="amount">500</span></td>
+                        <td><button id ="3" type="button" onclick="addToCart(this)">Thêm</button></td>
+                    </tr>
+               </tbody>
+           </table>
+       </div>
+       <hr>
+       <div class="shopping-cart">
+           <div class="title">Giỏ hàng của bạn</div>
+           <table id="carItems" class="cart-items" style="display:none">
+               <tr>
+                   <th>Mã sp</th>
+                   <th>Tên</th>
+                   <th>Giá </th>
+                   <th>&nbsp;</th>
+               </tr>
+               <tbody id="cart-body">
+
+               </tbody>
+           </table>
+           <div id="grandTotal" class="grandTotal" style="display:none">
+               Tổng tiền: $ <span id="total">400</span> 
+            </div>
+            <div id="emtyCart" class="emtyCart">
+                Bạn chưa chọn mặt hàng nào
+            </div>
+       </div>
+   </div> 
+</body>
+</html>
